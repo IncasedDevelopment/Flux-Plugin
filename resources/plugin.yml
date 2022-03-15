@@ -1,0 +1,14 @@
+name: Flux Plugin
+main: com.fluxnetworks.plugin.spigot.FluxPlugin
+author: IncasedDevelopment
+authors: [IncasedName, Alipheese, ScenicCoot]
+website: https://fluxnetworks.xyz/plugin
+version: '@project.version@'
+api-version: 1.13
+softdepend: [Vault, PlaceholderAPI, Maintenance]
+
+commands:
+  fluxplugin:
+    description: Flux Networks plugin command (/fnfn also works)
+    usage: /<command> rl/reload
+    aliases: [fluxnetworks, fluxn, fnfn]

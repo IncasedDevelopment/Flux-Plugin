@@ -1,0 +1,4 @@
+name: Flux Plugin
+main: com.fluxnetworks.plugin.bungee.FluxPlugin
+version: '@project.version@'
+author: Derkades

@@ -1,0 +1,76 @@
+player:
+  other:
+    not-found: "This player could not be found."
+    not-registered: "This player is not registered on the website."
+  self:
+    not-registered: "You must register for an account to perform this action."
+    command-banned: "You cannot run this command, you are banned from the website."
+
+command:
+  not-a-player: "You must be a player to perform this command."
+  no-permission: "You don't have permission to execute this command."
+
+  notifications:
+    usage: "/{command}"
+    description: "Displays a list of website notifications."
+    output:
+      no-notifications: "You do not have any unread notifications."
+      notification: "<hover:show_text:\"Click to open in a web browser\"><click:open_url:\"<url>\"><message>"
+      fail: "An error occured while trying to retrieve a list of notifications. Please notify the server administrator about this issue."
+
+  register:
+    usage: "/{command} <email>"
+    description: "Create a website account"
+    output:
+      success:
+        email: "Please check your inbox to complete registration."
+        link: "<hover:show_text:\"Click to open in a web browser\"><click:open_url:\"<url>\">Please complete registration by going to <url>."
+      fail:
+        generic: "An error occured while trying to register. Please notify the server administrator about this issue."
+        already-exists: "You already have an account."
+        email-used: "This email address is already used for a different user account."
+        email-invalid: "The provided email address is invalid."
+        username-invalid: "The provided username is invalid."
+        cannot-send-email: "Unable to send registration email, please contact an admin to activate your account."
+
+  report:
+    usage: "/{command} <name/uuid> <reason>"
+    description: "Report a player"
+    output:
+      success: "Thank you for reporting this player."
+      fail:
+        generic: "An error occured while trying to report this player. Please notify the server administrator about this issue."
+        already-open: "You cannot report this player, you already have an open report for them."
+        report-self: "You cannot report yourself."
+
+  validate:
+    usage: "/{command} <code>"
+    description: "Validates the user's website account using the given code."
+    output:
+      success: "Your account has been validated."
+      fail:
+        invalid-code: "Your validation code is incorrect. Please check if you copied it correctly and try again."
+        already-validated: "Your account is already validated."
+        generic: "An unknown error occured while trying to submit a validation code."
+
+  user-info:
+    usage: "/{command} [username]"
+    description: "Retrieve information about a website user"
+    output:
+      username: "Username: <username>"
+      displayname: "Display name: <displayname>"
+      uuid: "UUID: <uuid>"
+      uuid-unknown: 'UUID: unknown'
+      primary-group: 'Primary group: <groupname>'
+      all-groups: 'All groups: <groups_names_list>'
+      registered-date: "Registered on <date>"
+      validated: "Account validated: <validated>"
+      banned: "Banned: <banned>"
+      custom-field: "Custom field '<name>': <value>"
+      'yes': "yes"
+      'no': "no"
+      fail: "An unknown error occured while trying to retrieve player information."
+
+join-not-registered: "You do not have an account on our website yet. Please register using /register."
+website-announcement: "Website announcement: <message>"
+user-sync-kick: "You are banned from our server following a website account ban."
