@@ -80,7 +80,7 @@ public class FluxPlugin extends JavaPlugin implements CommonObjectsProvider {
 		if (this.getServer().getPluginManager().getPlugin("Vault") != null) {
 			final RegisteredServiceProvider<net.milkbowl.vault.permission.Permission> permissionProvider = this.getServer().getServicesManager().getRegistration(net.milkbowl.vault.permission.Permission.class);
 			if (permissionProvider == null) {
-				log(Level.WARNING, "No vault compatible permissions plugin was found. Group sync will not work.");
+				log(Level.WARNING, "No vault compatible permissions plugin was found. Group sync will not work...");
 			} else {
 				this.permissions = permissionProvider.getProvider();
 
